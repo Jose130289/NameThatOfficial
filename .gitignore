@@ -9,6 +9,21 @@
 
 ## Directory-based project format:
 .idea/
+
+# Android Studio
+#.idea/
+.gradle
+gradle
+/*/local.properties
+/*/out
+/*/*/build
+build
+/*/*/production
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
 # if you remove the above rule, at least ignore the follwing:
 
 # User-specific stuff:
