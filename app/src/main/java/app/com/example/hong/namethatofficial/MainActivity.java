@@ -22,8 +22,7 @@ public class MainActivity extends Activity {
         String[] electedPositions = {"Governor", "Lieutenant Governor", "Secretary of State", "Attorney General", "State Senator 1", "State Senator 2"};
         final String[] electedOfficials = {"Rick Snyder -R", "Brian Calley -R", "Ruth Johnson -R", "Bill Schuette -R", "Deborah Stabenow -D", "Carl Levin -D"};
 
-        ListAdapter positionListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
-                electedPositions);
+        ListAdapter positionListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, electedPositions);
 
         ListView positionView = (ListView) findViewById(R.id.mainView);
 
@@ -34,7 +33,7 @@ public class MainActivity extends Activity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 String positionSelected = String.valueOf(electedOfficials[position]);
-                Toast.makeText(MainActivity.this, positionSelected, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, positionSelected, Toast.LENGTH_LONG).show();
 
             }
         });
