@@ -30,9 +30,9 @@ public class MainActivity extends Activity {
 
         positionView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int index, long l) {
 
-                String positionSelected = String.valueOf(electedOfficials[position]);
+                String positionSelected = String.valueOf(electedOfficials[index]);
                 Toast.makeText(MainActivity.this, positionSelected, Toast.LENGTH_LONG).show();
 
             }
