@@ -12,12 +12,15 @@ import android.widget.AdapterView;
 import android.widget.Toast;
 
 
+
 public class MainActivity extends Activity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         String[] electedPositions = {"Governor", "Lieutenant Governor", "Secretary of State", "Attorney General", "State Senator 1", "State Senator 2"};
         final String[] electedOfficials = {"Rick Snyder -R", "Brian Calley -R", "Ruth Johnson -R", "Bill Schuette -R", "Deborah Stabenow -D", "Carl Levin -D"};
@@ -58,4 +61,8 @@ public class MainActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
+
+
+
